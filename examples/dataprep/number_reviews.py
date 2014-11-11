@@ -1,8 +1,17 @@
+#!/usr/bin/env python2.7
+
 import ujson as json
 from collections import Counter
+import os
+import sys
 
 if __name__ == "__main__":
-    reviews = open("yelp_academic_dataset_review.json")
+    try:
+        data_path = sys.argv[1]
+    except IndexError:
+        data_path = "./"
+
+    reviews = open(os.path.join(data_path, "yelp_academic_dataset_review.json"))
     bid_on_date = []
     for line in reviews:
         if "2010-04-25" in line:
@@ -10,7 +19,7 @@ if __name__ == "__main__":
             bid_on_date.append(data['business_id'])
             
     cities = Counter()
-    businesses = open("yelp_academic_dataset_business.json")
+    businesses = open(os.path.join(data_path, "yelp_academic_dataset_business.json"))
     for business in businesses:
        data = json.loads(business)
        if data['business_id'] in bid_on_date:

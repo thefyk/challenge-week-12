@@ -1,6 +1,10 @@
+#!/usr/bin/env python2.7
+
 import string
 import ujson as json
 from collections import Counter
+import os
+import sys
 
 def extract_ngrams(words, N=2):
     for i in xrange(len(words)-N+1):
@@ -14,8 +18,13 @@ def extract_words(text):
             yield word
 
 if __name__ == "__main__":
+    try:
+        data_path = sys.argv[1]
+    except IndexError:
+        data_path = "./"
+
     ngrams = Counter()
-    reviews = open("yelp_academic_dataset_review.json")
+    reviews = open(os.path.join(data_path, "yelp_academic_dataset_review.json"))
     for line in reviews:
         if "2010-04-25" in line:
             data = json.loads(line)

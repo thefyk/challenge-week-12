@@ -3,6 +3,7 @@ in them.  The output of the program should be:
 
 
 ```
+$ ./subreddits_by_commenters.py /data/datasets/social/reddit/
 [((u'funny', u'pics'), 0.2529296875),
  ((u'funny', u'WTF'), 0.2177734375),
  ((u'funny', u'AskReddit'), 0.2158203125),
