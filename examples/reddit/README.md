@@ -1,6 +1,7 @@
 This code calculates the similarity between subreddits by the users who comment
 in them.  The output of the program should be:
 
+
 ```
 [((u'funny', u'pics'), 0.2529296875),
  ((u'funny', u'WTF'), 0.2177734375),
@@ -29,11 +30,12 @@ in them.  The output of the program should be:
  ((u'videos', u'AskReddit'), 0.134765625)]
 ```
 
+
 In order for this code to work, you must have two files, `reddit.json` and
-`subreddit_counts.txt.sorted.desc`.  `reddit.json` can be downloaded from
-http://www.reddit.com/r/datasets/comments/1mbsa2/155m_reddit_comments_over_15_days/.
+`subreddit_counts.txt.sorted.desc`.  `reddit.json` can be downloaded
+[here](http://www.reddit.com/r/datasets/comments/1mbsa2/155m_reddit_comments_over_15_days/).
+
+
 The other file, `subreddit_counts.txt.sorted.desc` is a file which contains a
 sorted list of all the subreddits by the number of comments seen in the dataset
-and is included in this repo.
-
-CHALLENGE: create this file yourself!
+and is included in this repo. CHALLENGE: create this file yourself!
