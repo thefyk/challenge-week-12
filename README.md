@@ -25,13 +25,21 @@
 
 ## Challenge 6
 
-[Bias in answer]
+[What does this change about our analysis?]
 
 ## Challenge 7
 
-[Other Biases]
+[How would you change your conclusions?]
 
 ## Challenge 8
+
+[Bias in answer]
+
+## Challenge 9
+
+[Other Biases]
+
+## Challenge 10
 
 [How may you try and prove the bias]
 
