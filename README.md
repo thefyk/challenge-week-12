@@ -33,7 +33,7 @@
 
 ## Challenge 8
 
-[How would you prove your bias]
+[How may you try and prove the bias]
 
 # Yelp and Weather 
 
