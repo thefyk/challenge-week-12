@@ -33,26 +33,43 @@
 
 ## Challenge 8
 
-[Prove a bias]
+[How would you prove your bias]
 
 # Yelp and Weather 
 
 ## Challenge 1
 
-[Show your 
+[Screenshot your query and a result]
 
 ## Challenge 2
 
+[Query snippet]
+[Answer]
+
 ## Challenge 3
+
+[Query snippet]
+[Answer]
 
 ## Challenge 4
 
+[Query snippet]
+[Answer]
+
 ## Challenge 5
+
+[Query snippet]
+[Answer]
 
 ## Challenge 6
 
+[Query snippet]
+[Answer]
+
 ## Challenge 7 [BONUS]
 
+[Code]
+[Answer]
 
 
 
