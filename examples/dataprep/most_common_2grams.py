@@ -23,13 +23,15 @@ if __name__ == "__main__":
     except IndexError:
         data_path = "./"
 
-    ngrams = Counter()
+    common_ngrams = Counter()
     reviews = open(os.path.join(data_path, "yelp_academic_dataset_review.json"))
     for line in reviews:
         if "2010-04-25" in line:
             data = json.loads(line)
-            ngrams.update(extract_ngrams(list(extract_words(data['text']))))
-    ngrams.most_common(5)
+            words = list(extract_words(data['text']))
+            ngrams = extract_ngrams(words)
+            common_ngrams.update(ngrams)
+    print common_ngrams.most_common(5)
 
 """
 [((u'of', u'the'), 177),

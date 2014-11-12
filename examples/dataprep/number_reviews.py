@@ -14,6 +14,8 @@ if __name__ == "__main__":
     reviews = open(os.path.join(data_path, "yelp_academic_dataset_review.json"))
     bid_on_date = []
     for line in reviews:
+        # Instead of loading EVERY json object to check the date, we can simply
+        # do a string comparison to see if we _need_ to parse this line
         if "2010-04-25" in line:
             data = json.loads(line)
             bid_on_date.append(data['business_id'])
