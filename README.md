@@ -4,7 +4,7 @@
 
 ## Challenge 1
 
-[Insert Screenshot]
+![Screenshot](http://i.imgur.com/BcyoaFv.png)
 
 ## Challenge 2
 
@@ -47,37 +47,37 @@ I could prove the bias by collecting data over a different time period and compa
 
 ## Challenge 1
 
-[Screenshot your query and a result]
+![Screenshot](http://i.imgur.com/7r9CCnF.png)
+
+[Query: db.precip.aggregate([{$match: {"STATION_NAME":"MADISON DANE CO REGIONAL AIRPORT WI US", "DATE":/^20100425/}}, {$group: {_id: "$STATION_NAME", total:{$sum:"$HPCP"}}}])]
+
+[Result: 62]
 
 ## Challenge 2
 
-[Query snippet]
-[Answer]
+2.Query: db.normal.aggregate([{$match: {"STATION_NAME":"LAS VEGAS MCCARRAN INTERNATIONAL AIRPORT NV US", "DATE":/^20100425/}}, {$group: {_id: "$STATION_NAME", average:{$avg:"$HLY-WIND-AVGSPD"}}}])
+
+Result: 110.0833
 
 ## Challenge 3
 
-[Query snippet]
-[Answer]
+3. > db.yelpbus.aggregate([{$match: {"city":"Madison"}}, {$group: {_id: "$city", total: {$sum:"$review_count"}}}])
+
+{ "_id" : "Madison", "total" : 34410 }
 
 ## Challenge 4
 
-[Query snippet]
-[Answer]
+4. > db.yelpbus.aggregate([{$match: {"city":"Las Vegas"}}, {$group: {_id: "$city", total: {$sum:"$review_count"}}}])
+
+{ "_id" : "Las Vegas", "total" : 577550 }
 
 ## Challenge 5
 
-[Query snippet]
-[Answer]
+> db.yelpbus.aggregate([{$match: {"city":"Phoenix"}}, {$group: {_id: "$city", total: {$sum:"$review_count"}}}])
 
-## Challenge 6
+{ "_id" : "Phoenix", "total" : 200089 }
 
-[Query snippet]
-[Answer]
 
-## Challenge 7 [BONUS]
-
-[Code]
-[Answer]
 
 
 
